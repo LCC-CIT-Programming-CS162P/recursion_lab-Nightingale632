@@ -1,5 +1,6 @@
 def main():
-    print("palindrome")
+    '''Lab 2, Problem 3: Palindromes'''
+    print("palindromes:")
 
 
 main()

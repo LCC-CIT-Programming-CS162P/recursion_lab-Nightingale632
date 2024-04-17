@@ -11,6 +11,7 @@ def main():
     print("The Tower of Hanoi\n")
     print("This program will challenge the computer to solve the Tower of Hanoi\n")
     diskCount = int(input("Provide a positive whole number of disks to give to the computer: "))
+    print("The computer will now attempt to solve the Tower of Hanoi with " +str(diskCount) + " Disks:")
     towerPlay(diskCount, "left", "right", "middle")
 
 

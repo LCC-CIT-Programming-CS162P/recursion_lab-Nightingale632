@@ -14,7 +14,7 @@ def trianglePrint(n, nMax):
         return n + trianglePrint(n - 1, nMax)
 
 def main():
-    print("This program will allow the user to request the nth triangle number:")
+    print("This program allows the user to request the nth triangle number they decide\n")
     max = int(input("Provide a positive whole number: "))
     triNum = triangle(max)
     print("The " + str(max) + "th triangle number is " + str(triNum) + ".")
@@ -22,7 +22,7 @@ def main():
     for n in range(1, max + 1):
         border = ('=' * ((n * 2) + 1))
         print(border)
-        print("Triangle_" + str(n) + " = " + str(triNum))
+        print("Triangle " + str(n) + " = " + str(triNum))
         print(border)
         triNum = trianglePrint(n, n)
         print(border)

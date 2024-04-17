@@ -1,8 +1,8 @@
 def main():
     '''Lab 2, Problem 2: Fibonacci'''
-    print("The fibonacci sequence up to the tenth output:")
+    print("The fibonacci sequence up to the nth output\n")
 
-    n = int(input("Enter a whole number:"))
+    n = int(input("Enter a whole number to start the sequence:"))
     n1 = 0
     n2 = 1
     next_number = n2

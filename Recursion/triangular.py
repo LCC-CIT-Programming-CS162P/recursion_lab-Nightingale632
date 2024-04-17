@@ -1,10 +1,12 @@
 def triangle(n):
+    '''basecase'''
     if n == 1:
         return 1
     else:
         return n + triangle(n - 1)
 
 def trianglePrint(n, nMax):
+    '''fn to define a border and triangle pattern from oftedahld'''
     borderExtra = nMax - n
     line = (borderExtra * '-') + ((('-' + '\u25b2') * n) + '-') + (borderExtra * '-')
     print(line)
@@ -14,8 +16,9 @@ def trianglePrint(n, nMax):
         return n + trianglePrint(n - 1, nMax)
 
 def main():
-    print("This program allows the user to request the nth triangle number they decide\n")
-    max = int(input("Provide a positive whole number: "))
+    '''Lab 2, problem 1: Triangles'''
+    print("This program allows the user to request the nth triangle number they decide to use\n")
+    max = int(input("Provide a positive whole number to convert to triangles: "))
     triNum = triangle(max)
     print("The " + str(max) + "th triangle number is " + str(triNum) + ".")
     print()

@@ -1,4 +1,5 @@
 def isPalindrome(s):
+    '''tears apart user input words to determine if palindrome'''
     s = s.lower() #turns words to lower case
     l = len(s) #Grabs length of word
     if l < 2: #ensures the word is eligable to be a palindrome

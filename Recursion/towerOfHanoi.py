@@ -1,4 +1,5 @@
 def towerPlay(n, towerStart, towerFinal, towerExtra):
+    '''Game instructions for the computer'''
     if n == 1:
         print("Disk " +str(n) + ": " + towerStart + "-->" + towerFinal)
     else:
